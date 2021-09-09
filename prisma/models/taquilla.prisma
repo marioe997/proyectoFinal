@@ -1,0 +1,7 @@
+type Taquilla {
+  id: ID! @id
+  funcion: Sala @relation(link: INLINE)
+  //tipo de pago
+  totalPagar: Float! 
+  qr: String!
+}

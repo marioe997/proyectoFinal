@@ -1,0 +1,32 @@
+type User {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  email: String! @unique
+  password: String
+  name: String!
+  userName: String!@unique
+  visitas: Int!
+  membresia: Membresia!
+  shop: Taquilla @relation(link: INLINE)
+  number: String
+  //suma puntos en compra
+
+  //como comprar varios productos
+  candyshop: Dulceria @relation(link: INLINE)
+}
+
+
+//crea una tambla con los beneficiso de cada  membresia
+// implementa inferfaz
+enum Membresia {
+  FAN
+  FANATICO
+  SUPERFAN
+}
+
+//usuario pierdo correo y quiere recuperar su membresia
+//agregar el numero de membresia para que sea el numero
+//Crea clase que sea membresian 
+//Schedule
+//ver cuando los asientos esten llenos
+//implementa la opcion covid

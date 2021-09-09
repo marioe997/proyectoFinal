@@ -1,0 +1,15 @@
+type Sala {
+  id: ID! @id
+  tipoSala: TipoSala!
+  totalAsientos: Int! 
+  funcion: Cartelera! @relation(link: INLINE)
+}
+
+
+enum TipoSala {
+  VIP
+  KIDS
+  4DX
+  3D
+  NORMAL
+}

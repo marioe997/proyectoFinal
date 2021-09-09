@@ -1,0 +1,4 @@
+type Producto {
+    id: ID! @id
+    nombre: String!
+}

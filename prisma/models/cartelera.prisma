@@ -1,0 +1,9 @@
+type Cartelera {
+  id: ID! @id
+  nombrePeli: String! @unique
+  sinopsis: String! 
+  clasificacion: String!
+  duracion: Int!
+}
+// cartelera podria ser tu function, aqui se podria ir a poner 
+//
